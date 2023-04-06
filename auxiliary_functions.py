@@ -72,12 +72,12 @@ def BadRateEncoding(df, col, target):
 
 def ChiMerge(df, col, target, max_interval=5,special_attribute=[],minBinPcnt=0):
     '''
-    :param df: 包含目标变量与分箱属性的数据框
-    :param col: 需要分箱的属性
-    :param target: 目标变量，取值0或1
-    :param max_interval: 最大分箱数。如果原始属性的取值个数低于该参数，不执行这段函数
-    :param special_attribute: 不参与分箱的属性取值
-    :param minBinPcnt：最小箱的占比，默认为0
+    :param df: 包含目标变量与分箱属性的数据框,
+    :param col: 需要分箱的属性,
+    :param target: 目标变量，取值0或1,
+    :param max_interval: 最大分箱数。如果原始属性的取值个数低于该参数，不执行这段函数,
+    :param special_attribute: 不参与分箱的属性取值,
+    :param minBinPcnt：最小箱的占比，默认为0,
     :return: 分箱结果
     '''
     colLevels = sorted(list(set(df[col])))
